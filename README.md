@@ -64,7 +64,7 @@
     python nao_client.py
     ```
 
-3. In `llm` terminal run the `chat_gen.py` and start a conversation with your NAO!
+3. In `llm` terminal run the `chat_gen.py` and start a text-based conversation with your NAO!
 
     ```
     python chat_gen.py
