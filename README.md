@@ -64,8 +64,26 @@
     python nao_client.py
     ```
 
-3. In `llm` terminal run the `chat_gen.py` and start a text-based conversation with your NAO!
+3. In `llm` terminal run the `text_chat.py` and start a text-based conversation with your NAO!
 
     ```
-    python chat_gen.py
+    python text_chat.py
+    ```
+
+
+### Full Conversation
+1. Install a python package for speech to text conversion (e.g. `SpeechRecognition`)
+
+    ```
+    sudo apt-get update
+    sudo apt-get install python3-dev portaudio19-dev
+    pip3 install pyaudio
+    sudo apt-get install flac
+    pip install SpeechRecognition
+    ```
+
+3. In `llm` terminal run the `voice_chat.py` and start a voice-based conversation with your NAO!
+
+    ```
+    python voice_chat.py
     ```
