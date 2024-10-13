@@ -18,7 +18,7 @@
 
 ### NaoQi Installation
 
-1. Download NaoQi Python SDK from: https://www.aldebaran.com/en/support/nao-6/downloads-softwares. Rename the SDK with a short name -- e.g. `python-sdk`. Check the following image for `ubuntu` system.
+1. Download NaoQi Python SDK from: https://www.aldebaran.com/en/support/nao-6/downloads-softwares. Rename the SDK with a short name -- e.g. `python-sdk`. Check the following image for `ubuntu` OS.
 
 ![NAOQi Install](./images/nao.png)
 
@@ -34,25 +34,27 @@
 
 ### LLM Environment Setup
 
-1. Create a conda environment using `python 3.x`. OpenAI API requires `python 3.x`
+1. Create account in [OpenAI](https://platform.openai.com/docs/overview) and get an API_KEY.
+
+2. Create a conda environment using `python 3.x`. OpenAI API requires `python 3.x`
 
     ```
     conda create -n llm python=3.10
     conda activate llm
     ```
-2. Install necessary packages in the `llm` environment
+3. Install necessary packages in the `llm` environment
 
     ```
     pip install -r llm_requirements.txt
     ```
 
-3. Set the `OPENAI_API_KEY` variable in the terminal.
+4. Set the `OPENAI_API_KEY` variable in the terminal.
 
     ```
     export OPENAI_API_KEY= "<YOUR_OPEN_AI_API_KEY>"
     ```
 
-4. Run the `test_llm.py` to check if your API is working!
+5. Run the `test_llm.py` to check if your API is working!
 
 
 ### Quickstart
