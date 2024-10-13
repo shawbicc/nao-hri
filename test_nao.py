@@ -8,5 +8,5 @@ PORT = 9559
 
 tts = ALProxy("ALAnimatedSpeech",ROBOT_IP, PORT)
 message= "I'm working fine! Thanks for checking me."
-message_str = "\\style=didactic\\ \\vol=50\\ \\wait=5\\" + message
+message_str = "\\style=didactic\\ \\vol=90\\ \\wait=5\\" + message
 tts.say(message_str)

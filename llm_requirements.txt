@@ -1,3 +1,5 @@
 openai
 unidecode
 zmq
+gTTS
+playsound
