@@ -29,4 +29,4 @@ while True:
     openai_response = unidecode(openai_response)
     socket.send_string(openai_response)
     message = socket.recv_string()
-    print(f"Received ack from NAO: {message}")
+    print(f"Received back from NAO: {message}")

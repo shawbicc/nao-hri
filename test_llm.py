@@ -1,13 +1,15 @@
 from openai import OpenAI
-
 client = OpenAI()
 
-response = client.chat.completions.create(
-  model="gpt-4o-mini",
-  messages=[
-    {"role": "system", "content": "You are a helpful assistant. Answer in a single sentence."},
-    {"role": "user", "content": "What is a Robot?"}
-  ]
+completion = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "user",
+            "content": "Write a haiku about recursion in programming."
+        }
+    ]
 )
 
-print(response.choices[0].message.content)
+print(completion.choices[0].message.content)
