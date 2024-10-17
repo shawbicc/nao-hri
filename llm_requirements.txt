@@ -2,4 +2,6 @@ openai
 unidecode
 zmq
 gTTS
-playsound
+SpeechRecognition
+PyAudio
+opencv-python
